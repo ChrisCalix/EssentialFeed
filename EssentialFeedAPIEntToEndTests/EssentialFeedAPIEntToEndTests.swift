@@ -101,10 +101,4 @@ final class EssentialFeedAPIEntToEndTests: XCTestCase {
     private func imageURL(at index: Int) -> URL {
         return URL(string: "https://url-\(index+1).com")!
     }
-    
-    private func printCacheLocationTest() {
-        let cachesDir = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
-        print("Location: \(cachesDir)")
-        // Search there for com.apple.dt.xctest.tool folder
-    }
 }
