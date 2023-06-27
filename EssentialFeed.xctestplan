@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "7057F6BD-7DDD-4CE9-9B68-DCA0F619F76D",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "identifier" : "C3F493E32A4A1A5A0027A77E",
+        "name" : "EssentialFeedTests"
+      }
+    }
+  ],
+  "version" : 1
+}
