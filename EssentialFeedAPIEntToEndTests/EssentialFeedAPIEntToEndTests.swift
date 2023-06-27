@@ -11,7 +11,6 @@ import EssentialFeed
 final class EssentialFeedAPIEntToEndTests: XCTestCase {
 
     func test_endToEndTestServerGETFeedResult_matchesFixedTestAccountData() {
-        printCacheLocationTest()
         switch getFeedResult() {
         case let .success(items):
             XCTAssertEqual(items.count, 8, "Expected 8 items in the test account feed")
