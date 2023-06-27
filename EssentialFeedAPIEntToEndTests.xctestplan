@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "3D7967D5-641D-4A4E-8824-9DC8B97E3F9B",
+      "id" : "352880A3-5739-46D4-B0FD-BC0005979851",
       "name" : "Configuration 1",
       "options" : {
 
@@ -16,8 +16,8 @@
       "parallelizable" : true,
       "target" : {
         "containerPath" : "container:EssentialFeed.xcodeproj",
-        "identifier" : "C3F493E32A4A1A5A0027A77E",
-        "name" : "EssentialFeedTests"
+        "identifier" : "C3A17B9B2A4B302A002339FA",
+        "name" : "EssentialFeedAPIEntToEndTests"
       }
     }
   ],
