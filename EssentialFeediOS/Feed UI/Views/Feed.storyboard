@@ -133,6 +133,7 @@ Location</string>
                         <connections>
                             <outlet property="dataSource" destination="T8N-un-uJq" id="CmD-mr-Lcg"/>
                             <outlet property="delegate" destination="T8N-un-uJq" id="eLy-pB-VBz"/>
+                            <outlet property="prefetchDataSource" destination="T8N-un-uJq" id="CQ7-vd-33k"/>
                         </connections>
                     </tableView>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="0BM-2w-biN">
