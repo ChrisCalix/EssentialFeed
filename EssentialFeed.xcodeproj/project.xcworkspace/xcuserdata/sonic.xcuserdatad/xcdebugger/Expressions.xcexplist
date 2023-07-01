@@ -3,15 +3,23 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "URLSessionHTTPClientTests.URLProtocolStub.startLoading():URLSessionHTTPClientTests.swift">
+      </ContextState>
+      <ContextState
+         contextName = "FeedViewControllerTests.test_feedImageView_rendersImageLoadedFromURL():FeedViewControllerTests.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view0?.renderedImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "static URLSessionHTTPClientTests.URLProtocolStub.stub(url:error:):URLSessionHTTPClientTests.swift">
          <PersistentStrings>
             <PersistentString
                value = "stubs">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "URLSessionHTTPClientTests.URLProtocolStub.startLoading():URLSessionHTTPClientTests.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>
