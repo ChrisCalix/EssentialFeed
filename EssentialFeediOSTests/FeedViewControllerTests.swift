@@ -28,16 +28,16 @@ final class FeedViewControllerTests: XCTestCase {
         let (sut, loader) = makeSUT()
         
         sut.loadViewIfNeeded()
-        XCTAssertTrue(sut.isShowingLoadIndicator, "Expected loading indicator once view is loaded")
+        XCTAssertTrue(sut.isShowingLoadingIndicator, "Expected loading indicator once view is loaded")
         
         loader.completeFeedLoading(at: 0)
-        XCTAssertFalse(sut.isShowingLoadIndicator, "Expected no loading indicator once loading is completes successfully")
+        XCTAssertFalse(sut.isShowingLoadingIndicator, "Expected no loading indicator once loading is completes successfully")
         
         sut.simulateUserInitiatedFeedReload()
-        XCTAssertTrue(sut.isShowingLoadIndicator, "Expected loading indicator once user initiates a reload")
+        XCTAssertTrue(sut.isShowingLoadingIndicator, "Expected loading indicator once user initiates a reload")
         
         loader.completeFeedLoadingWithError(at: 1)
-        XCTAssertFalse(sut.isShowingLoadIndicator, "Expected no loading indicator once user initiated loading completes with error")
+        XCTAssertFalse(sut.isShowingLoadingIndicator, "Expected no loading indicator once user initiated loading completes with error")
     }
     
     func test_loadFeedCompletion_rendersSuccessfullyLoadedFeed() {
@@ -214,7 +214,22 @@ final class FeedViewControllerTests: XCTestCase {
         
         view1?.simulateRetryAction()
         XCTAssertEqual(loader.loadedImageURLs, [image0.url, image1.url, image0.url, image1.url], "Expected fourth imageURL request after second view retry action")
+    }
     
+    func test_feedImageView_preloadsImageURLWhenNearVisible() {
+        let image0 = makeImage(url: URL(string: "http://url-0.com")!)
+        let image1 = makeImage(url: URL(string: "http://url-1.com")!)
+        let (sut, loader) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        loader.completeFeedLoading(with: [image0, image1])
+        XCTAssertEqual(loader.loadedImageURLs, [], "Expected no image URL requests until image is near visible")
+        
+        sut.simulateFeedImageViewNearVisible(at: 0)
+        XCTAssertEqual(loader.loadedImageURLs, [image0.url], "Expected first image URL request once first image is near visible")
+        
+        sut.simulateFeedImageViewNearVisible(at: 1)
+        XCTAssertEqual(loader.loadedImageURLs, [image0.url, image1.url], "Expected second image URL request once second image is near visible")
     }
     
     // MARK: - Helpers
@@ -333,7 +348,13 @@ private extension FeedViewController {
         delegate?.tableView?(tableView, didEndDisplaying: view!, forRowAt: index)
     }
     
-    var isShowingLoadIndicator: Bool {
+    func simulateFeedImageViewNearVisible(at row: Int) {
+        let ds = tableView.prefetchDataSource
+        let index = IndexPath(row: row, section: feedImagesSection)
+        ds?.tableView(tableView, prefetchRowsAt: [index])
+    }
+    
+    var isShowingLoadingIndicator: Bool {
         return refreshControl?.isRefreshing == true
     }
     
