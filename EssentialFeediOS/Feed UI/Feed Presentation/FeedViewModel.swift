@@ -5,7 +5,6 @@
 //  Created by Sonic on 1/7/23.
 //
 
-import Foundation
 import EssentialFeed
 
 final class FeedViewModel {
