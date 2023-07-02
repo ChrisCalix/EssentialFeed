@@ -26,8 +26,8 @@
 		C36440DA2A4A43E5005223BC /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36440D92A4A43E5005223BC /* FeedItemsMapper.swift */; };
 		C3717E062A4A69180014790B /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3717E052A4A69180014790B /* URLSessionHTTPClientTests.swift */; };
 		C37F253F2A4E48640017E4CD /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37F25372A4E48630017E4CD /* EssentialFeediOS.framework */; };
-		C383CD292A522CFA009A0467 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = C383CD282A522CFA009A0467 /* Feed.strings */; };
 		C383CD2B2A522E25009A0467 /* FeedUIIntegrationTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383CD2A2A522E25009A0467 /* FeedUIIntegrationTests+Localization.swift */; };
+		C383CD2C2A523BAC009A0467 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = C383CD2E2A523BAC009A0467 /* Feed.strings */; };
 		C38678A82A4E7AE80063E73B /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38678A72A4E7AE80063E73B /* FeedUIIntegrationTests.swift */; };
 		C38678BA2A4E7F950063E73B /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F493DC2A4A1A5A0027A77E /* EssentialFeed.framework */; };
 		C38678BB2A4E7F950063E73B /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3F493DC2A4A1A5A0027A77E /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -153,8 +153,8 @@
 		C37F253E2A4E48630017E4CD /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37F254C2A4E48B70017E4CD /* EssentialFeediOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeediOS.xctestplan; sourceTree = "<group>"; };
 		C37F254D2A4E4A340017E4CD /* CI_iOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI_iOS.xctestplan; sourceTree = "<group>"; };
-		C383CD282A522CFA009A0467 /* Feed.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Feed.strings; sourceTree = "<group>"; };
 		C383CD2A2A522E25009A0467 /* FeedUIIntegrationTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+Localization.swift"; sourceTree = "<group>"; };
+		C383CD2D2A523BAC009A0467 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		C38678A72A4E7AE80063E73B /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		C3A17B9C2A4B302A002339FA /* EssentialFeedAPIEntToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEntToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A17B9E2A4B302A002339FA /* EssentialFeedAPIEntToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEntToEndTests.swift; sourceTree = "<group>"; };
@@ -479,7 +479,7 @@
 				C3D155F02A50D7D300C60021 /* FeedImagePresenter.swift */,
 				C3D155F22A50DE7700C60021 /* FeedLoadingViewModel.swift */,
 				C3D155F42A50DE9F00C60021 /* FeedViewModel.swift */,
-				C383CD282A522CFA009A0467 /* Feed.strings */,
+				C383CD2E2A523BAC009A0467 /* Feed.strings */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
@@ -745,7 +745,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C383CD292A522CFA009A0467 /* Feed.strings in Resources */,
+				C383CD2C2A523BAC009A0467 /* Feed.strings in Resources */,
 				C3D155F72A50DFF800C60021 /* Feed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -913,6 +913,17 @@
 			targetProxy = C3F493E62A4A1A5A0027A77E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C383CD2E2A523BAC009A0467 /* Feed.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C383CD2D2A523BAC009A0467 /* en */,
+			);
+			name = Feed.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C35E0D162A4D212200D48FF5 /* Debug */ = {
