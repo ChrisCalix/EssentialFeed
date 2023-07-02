@@ -441,14 +441,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		C3D155D22A50B4C800C60021 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				C38678A72A4E7AE80063E73B /* FeedUIIntegrationTests.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		C3D155DD2A50B6EE00C60021 /* Feed UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,8 +454,8 @@
 		C3D155DE2A50B71A00C60021 /* Feed UI */ = {
 			isa = PBXGroup;
 			children = (
+				C38678A72A4E7AE80063E73B /* FeedUIIntegrationTests.swift */,
 				C3D155CB2A50B38000C60021 /* Helpers */,
-				C3D155D22A50B4C800C60021 /* Controllers */,
 			);
 			path = "Feed UI";
 			sourceTree = "<group>";
