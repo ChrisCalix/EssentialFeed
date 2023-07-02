@@ -394,6 +394,10 @@
 		C3D155CB2A50B38000C60021 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C3D155D62A50B58600C60021 /* FeedUIIntegrationTest+TestHelpers.swift */,
+				C3D155D92A50B5E100C60021 /* FeedUIIntegrationTests+LoaderSpy.swift */,
+				C3D155DB2A50B65900C60021 /* FeedUIIntegrationTests+Assertions.swift */,
+				C383CD2A2A522E25009A0467 /* FeedUIIntegrationTests+Localization.swift */,
 				C3D155D42A50B50E00C60021 /* FeedViewController+TestHelpers.swift */,
 				C3D155C72A50B23000C60021 /* UIImage+TestHelpers.swift */,
 				C3D155C92A50B29700C60021 /* UIRefreshControl+TestHelpers.swift */,
@@ -427,21 +431,9 @@
 		C3D155D22A50B4C800C60021 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C3D155D32A50B4FD00C60021 /* Helpers */,
 				C38678A72A4E7AE80063E73B /* FeedUIIntegrationTests.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		C3D155D32A50B4FD00C60021 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				C3D155D62A50B58600C60021 /* FeedUIIntegrationTest+TestHelpers.swift */,
-				C3D155D92A50B5E100C60021 /* FeedUIIntegrationTests+LoaderSpy.swift */,
-				C3D155DB2A50B65900C60021 /* FeedUIIntegrationTests+Assertions.swift */,
-				C383CD2A2A522E25009A0467 /* FeedUIIntegrationTests+Localization.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		C3D155DD2A50B6EE00C60021 /* Feed UI */ = {
@@ -457,8 +449,8 @@
 		C3D155DE2A50B71A00C60021 /* Feed UI */ = {
 			isa = PBXGroup;
 			children = (
-				C3D155D22A50B4C800C60021 /* Controllers */,
 				C3D155CB2A50B38000C60021 /* Helpers */,
+				C3D155D22A50B4C800C60021 /* Controllers */,
 			);
 			path = "Feed UI";
 			sourceTree = "<group>";
