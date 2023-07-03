@@ -270,6 +270,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C332C1342A53266900865A12 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C3D155FA2A50F1CE00C60021 /* UIImageView+Animations.swift */,
+				C33668552A4F9F7E0048BC5E /* UIView+Shimmering.swift */,
+				C3D155F82A50F10700C60021 /* UITableView+Dequeueing.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		C3469C592A4BA383002B3BB4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,11 +454,9 @@
 		C3D155D12A50B4B600C60021 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C33668552A4F9F7E0048BC5E /* UIView+Shimmering.swift */,
+				C332C1342A53266900865A12 /* Helpers */,
 				C33668532A4F8E7C0048BC5E /* FeedImageCell.swift */,
 				C3D155F62A50DFF800C60021 /* Feed.storyboard */,
-				C3D155F82A50F10700C60021 /* UITableView+Dequeueing.swift */,
-				C3D155FA2A50F1CE00C60021 /* UIImageView+Animations.swift */,
 				C3882DC72A528B6D0098485F /* ErrorView.swift */,
 			);
 			path = Views;
