@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C3113EB92A4B39E40073F5B3 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C733D02A4A81F600640F36 /* XCTestCase+MemoryLeakTracking.swift */; };
+		C332C1362A5326DE00865A12 /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C332C1352A5326DE00865A12 /* FeedErrorViewModel.swift */; };
 		C33668542A4F8E7C0048BC5E /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33668532A4F8E7C0048BC5E /* FeedImageCell.swift */; };
 		C33668562A4F9F7E0048BC5E /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33668552A4F9F7E0048BC5E /* UIView+Shimmering.swift */; };
 		C340C1B42A4C8717004F249E /* FeedCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340C1B32A4C8717004F249E /* FeedCachePolicy.swift */; };
@@ -140,6 +141,7 @@
 /* Begin PBXFileReference section */
 		C3113EB82A4B361E0073F5B3 /* EssentialFeed.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeed.xctestplan; sourceTree = "<group>"; };
 		C3113EBA2A4B3A940073F5B3 /* CI_macOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI_macOS.xctestplan; sourceTree = "<group>"; };
+		C332C1352A5326DE00865A12 /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
 		C33668532A4F8E7C0048BC5E /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 		C33668552A4F9F7E0048BC5E /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
 		C340C1B32A4C8717004F249E /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
@@ -510,6 +512,7 @@
 				C3D155F02A50D7D300C60021 /* FeedImagePresenter.swift */,
 				C3D155F22A50DE7700C60021 /* FeedLoadingViewModel.swift */,
 				C3D155F42A50DE9F00C60021 /* FeedViewModel.swift */,
+				C332C1352A5326DE00865A12 /* FeedErrorViewModel.swift */,
 				C383CD2E2A523BAC009A0467 /* Feed.strings */,
 			);
 			path = "Feed Presentation";
@@ -846,6 +849,7 @@
 				C3882DC22A5281DA0098485F /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				C3D155ED2A50C2E400C60021 /* FeedImageViewModel.swift in Sources */,
 				C3D155E52A50B99200C60021 /* FeedImageCellController.swift in Sources */,
+				C332C1362A5326DE00865A12 /* FeedErrorViewModel.swift in Sources */,
 				C3882DC62A5282C80098485F /* FeedViewAdapter.swift in Sources */,
 				C3D155E82A50BCE800C60021 /* FeedUIComposer.swift in Sources */,
 			);
