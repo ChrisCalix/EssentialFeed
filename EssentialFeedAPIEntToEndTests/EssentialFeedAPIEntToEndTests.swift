@@ -65,8 +65,7 @@ final class EssentialFeedAPIEntToEndTests: XCTestCase {
         let url = feedTestServerURL.appendingPathComponent("73A7F70C-75DA-4C2E-B5A3-EED40DC53AA6/image")
         
         var receivedResult: FeedImageDataLoader.Result?
-        _ = loader.loadImageData(from: url) {
-            result in
+        _ = loader.loadImageData(from: url) { result in
             receivedResult = result
             exp.fulfill()
         }
