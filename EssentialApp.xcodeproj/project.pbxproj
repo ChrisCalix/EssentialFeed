@@ -15,6 +15,10 @@
 		C32D83D32A55E523003C44F3 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D83D22A55E523003C44F3 /* FeedLoaderWithFallbackComposite.swift */; };
 		C33E01F62A56098300529208 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33E01F52A56098300529208 /* FeedImageDataLoaderWithFallbackComposite.swift */; };
 		C33E020B2A56187D00529208 /* EssentialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33E020A2A56187D00529208 /* EssentialAppTests.swift */; };
+		C33E02132A561A5400529208 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33E02122A561A5400529208 /* EssentialFeed.framework */; };
+		C33E02142A561A5400529208 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C33E02122A561A5400529208 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C33E02172A561A5800529208 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33E02162A561A5800529208 /* EssentialFeediOS.framework */; };
+		C33E02182A561A5800529208 /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C33E02162A561A5800529208 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,21 @@
 			remoteInfo = EssentialApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C33E02152A561A5400529208 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C33E02142A561A5400529208 /* EssentialFeed.framework in Embed Frameworks */,
+				C33E02182A561A5800529208 /* EssentialFeediOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C32D83842A55D247003C44F3 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +63,8 @@
 		C33E02082A56187D00529208 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33E020A2A56187D00529208 /* EssentialAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppTests.swift; sourceTree = "<group>"; };
 		C33E02112A5618C500529208 /* EssentialApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialApp.xctestplan; sourceTree = "<group>"; };
+		C33E02122A561A5400529208 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C33E02162A561A5800529208 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33E02132A561A5400529208 /* EssentialFeed.framework in Frameworks */,
+				C33E02172A561A5800529208 /* EssentialFeediOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +126,8 @@
 		C32D83B72A55D3B5003C44F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C33E02162A561A5800529208 /* EssentialFeediOS.framework */,
+				C33E02122A561A5400529208 /* EssentialFeed.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +169,7 @@
 				C32D83802A55D247003C44F3 /* Sources */,
 				C32D83812A55D247003C44F3 /* Frameworks */,
 				C32D83822A55D247003C44F3 /* Resources */,
+				C33E02152A561A5400529208 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
