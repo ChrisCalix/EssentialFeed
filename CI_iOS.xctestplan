@@ -1,8 +1,8 @@
 {
   "configurations" : [
     {
-      "id" : "A93D5A68-AB51-496B-82EB-0542E6C1F8CF",
-      "name" : "Configuration 1",
+      "id" : "2B826681-0ECD-4100-96AA-299719C6E0E6",
+      "name" : "Test Scheme Action",
       "options" : {
 
       }
@@ -12,12 +12,17 @@
     "codeCoverage" : {
       "targets" : [
         {
-          "containerPath" : "container:EssentialFeed.xcodeproj",
+          "containerPath" : "container:EssentialApp.xcodeproj",
+          "identifier" : "C32D83832A55D247003C44F3",
+          "name" : "EssentialApp"
+        },
+        {
+          "containerPath" : "container:EssentialFeed\/EssentialFeed.xcodeproj",
           "identifier" : "C3F493DB2A4A1A5A0027A77E",
           "name" : "EssentialFeed"
         },
         {
-          "containerPath" : "container:EssentialFeed.xcodeproj",
+          "containerPath" : "container:EssentialFeed\/EssentialFeed.xcodeproj",
           "identifier" : "C37F25362A4E48630017E4CD",
           "name" : "EssentialFeediOS"
         }
@@ -29,7 +34,15 @@
     {
       "parallelizable" : true,
       "target" : {
-        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "containerPath" : "container:EssentialApp.xcodeproj",
+        "identifier" : "C33E02072A56187D00529208",
+        "name" : "EssentialAppTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:EssentialFeed\/EssentialFeed.xcodeproj",
         "identifier" : "C3A17B9B2A4B302A002339FA",
         "name" : "EssentialFeedAPIEntToEndTests"
       }
@@ -37,7 +50,7 @@
     {
       "parallelizable" : true,
       "target" : {
-        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "containerPath" : "container:EssentialFeed\/EssentialFeed.xcodeproj",
         "identifier" : "C35E0D0D2A4D212200D48FF5",
         "name" : "EssentialFeedCacheIntegrationTests"
       }
@@ -45,7 +58,7 @@
     {
       "parallelizable" : true,
       "target" : {
-        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "containerPath" : "container:EssentialFeed\/EssentialFeed.xcodeproj",
         "identifier" : "C3F493E32A4A1A5A0027A77E",
         "name" : "EssentialFeedTests"
       }
@@ -53,7 +66,7 @@
     {
       "parallelizable" : true,
       "target" : {
-        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "containerPath" : "container:EssentialFeed\/EssentialFeed.xcodeproj",
         "identifier" : "C37F253D2A4E48630017E4CD",
         "name" : "EssentialFeediOSTests"
       }
