@@ -10,7 +10,7 @@ import XCTest
 final class EssentialAppUIAcceptanceTests: XCTestCase {
 
     func test_onlaunch_displayRemoteFeedWhenCustomerHasConnectivity() {
-        let app = XCUIApplication()
+        let app = XCUIApplication(bundleIdentifier: "com.dukena.EssentialApp")
         
         app.launch()
         
