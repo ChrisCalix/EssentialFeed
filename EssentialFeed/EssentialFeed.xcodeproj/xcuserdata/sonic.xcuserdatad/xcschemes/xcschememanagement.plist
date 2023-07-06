@@ -27,11 +27,21 @@
 		<key>EssentialFeediOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>EssentialFeediOSTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>C34B28302A571494008153AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C35E0D0D2A4D212200D48FF5</key>
 		<dict>
 			<key>primary</key>
