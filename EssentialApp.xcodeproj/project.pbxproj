@@ -37,6 +37,7 @@
 		C38691C82A5675CA00BF62F9 /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C386919D2A56740F00BF62F9 /* FeedViewAdapter.swift */; };
 		C38691C92A5675CA00BF62F9 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38691892A56727D00BF62F9 /* FeedImageDataLoaderPresentationAdapter.swift */; };
 		C38691CC2A5678EB00BF62F9 /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38691CB2A5678EB00BF62F9 /* FeedAcceptanceTests.swift */; };
+		C3E82C252A57599400B4FEC6 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E82C242A57599400B4FEC6 /* CombineHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		C38691A82A56758C00BF62F9 /* FeedUIIntegrationTests+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+Localization.swift"; sourceTree = "<group>"; };
 		C38691A92A56758C00BF62F9 /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
 		C38691CB2A5678EB00BF62F9 /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
+		C3E82C242A57599400B4FEC6 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				C32D83902A55D248003C44F3 /* Assets.xcassets */,
 				C32D83922A55D248003C44F3 /* LaunchScreen.storyboard */,
 				C32D83952A55D248003C44F3 /* Info.plist */,
+				C3E82C242A57599400B4FEC6 /* CombineHelpers.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				C38691C62A5675CA00BF62F9 /* SceneDelegate.swift in Sources */,
 				C38691C82A5675CA00BF62F9 /* FeedViewAdapter.swift in Sources */,
 				C38691C42A5675CA00BF62F9 /* FeedUIComposer.swift in Sources */,
+				C3E82C252A57599400B4FEC6 /* CombineHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
