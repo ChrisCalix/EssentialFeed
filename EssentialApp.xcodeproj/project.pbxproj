@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C32D838F2A55D247003C44F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32D838D2A55D247003C44F3 /* Main.storyboard */; };
 		C32D83912A55D248003C44F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32D83902A55D248003C44F3 /* Assets.xcassets */; };
 		C32D83942A55D248003C44F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32D83922A55D248003C44F3 /* LaunchScreen.storyboard */; };
 		C32D83D32A55E523003C44F3 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D83D22A55E523003C44F3 /* FeedLoaderWithFallbackComposite.swift */; };
@@ -82,7 +81,6 @@
 		C32D83842A55D247003C44F3 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32D83872A55D247003C44F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C32D83892A55D247003C44F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C32D838E2A55D247003C44F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C32D83902A55D248003C44F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C32D83932A55D248003C44F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C32D83952A55D248003C44F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,7 +176,6 @@
 				C38691912A56730500BF62F9 /* MainQueueDispatchDecorator.swift */,
 				C32D83872A55D247003C44F3 /* AppDelegate.swift */,
 				C32D83892A55D247003C44F3 /* SceneDelegate.swift */,
-				C32D838D2A55D247003C44F3 /* Main.storyboard */,
 				C32D83902A55D248003C44F3 /* Assets.xcassets */,
 				C32D83922A55D248003C44F3 /* LaunchScreen.storyboard */,
 				C32D83952A55D248003C44F3 /* Info.plist */,
@@ -323,7 +320,6 @@
 			files = (
 				C32D83942A55D248003C44F3 /* LaunchScreen.storyboard in Resources */,
 				C32D83912A55D248003C44F3 /* Assets.xcassets in Resources */,
-				C32D838F2A55D247003C44F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,14 +395,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C32D838D2A55D247003C44F3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C32D838E2A55D247003C44F3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C32D83922A55D248003C44F3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -544,7 +532,6 @@
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -572,7 +559,6 @@
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
