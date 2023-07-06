@@ -218,6 +218,7 @@
 		C33E02092A56187D00529208 /* EssentialAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				C38691CB2A5678EB00BF62F9 /* FeedAcceptanceTests.swift */,
 				C386919F2A5674A800BF62F9 /* FeedUIIntegrationTests.swift */,
 				C33E01F72A5609DB00529208 /* Helpers */,
 				C32D83D02A55D929003C44F3 /* FeedLoaderWithFallbackCompositeTests.swift */,
@@ -225,7 +226,6 @@
 				C3E344D52A5628ED00971515 /* FeedLoaderCacheDecoratorTests.swift */,
 				C3E344DF2A5639C900971515 /* FeedImageDataLoaderCacheDecoratorTests.swift */,
 				C38691862A5670C400BF62F9 /* SceneDelegateTests.swift */,
-				C38691CB2A5678EB00BF62F9 /* FeedAcceptanceTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
