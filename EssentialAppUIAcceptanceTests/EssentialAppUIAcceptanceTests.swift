@@ -9,16 +9,17 @@ import XCTest
 
 final class EssentialAppUIAcceptanceTests: XCTestCase {
 
-    func test_onlaunch_displayRemoteFeedWhenCustomerHasConnectivity() {
+    func test_onLaunch_displaysRemoteFeedWhenCustomerHasConnectivity() {
         let app = XCUIApplication(bundleIdentifier: "com.dukena.EssentialApp")
-        
+        app.launchArguments = ["-reset"]
         app.launch()
         
         XCTAssertEqual(app.cells.count, 22)
     }
     
-    func test_inLaunch_displaysCachedRemoteFeedWhenCustomerHasNoConnectivity() {
+    func test_onLaunch_displaysCachedRemoteFeedWhenCustomerHasNoConnectivity() {
         let onlineApp = XCUIApplication()
+        onlineApp.launchArguments = ["-reset"]
         onlineApp.launch()
         
         let offlineApp = XCUIApplication()
