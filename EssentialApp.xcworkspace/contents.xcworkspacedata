@@ -11,7 +11,4 @@
    <FileRef
       location = "group:CI_iOS.xctestplan">
    </FileRef>
-   <FileRef
-      location = "group:EssentialApp/EssentialAppUIAcceptanceTests.xctestplan">
-   </FileRef>
 </Workspace>
