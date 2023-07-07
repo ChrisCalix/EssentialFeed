@@ -339,8 +339,6 @@
 				C36440D92A4A43E5005223BC /* FeedItemsMapper.swift */,
 				C3ABA19A2A4B927F0047918E /* RemoteFeedItem.swift */,
 				C34792AB2A5362A900998CEE /* RemoteFeedImageDataLoader.swift */,
-				C3C6317A2A5793B4002CCE34 /* ImageCommentMapper.swift */,
-				C3C6317C2A579457002CCE34 /* RemoteImageCommentsLaoder.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -401,7 +399,6 @@
 			children = (
 				C3F493FB2A4A22D20027A77E /* LoadFeedFromRemoteUseCaseTests.swift */,
 				C34792A62A534CA800998CEE /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
-				C3C6317E2A5795FB002CCE34 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -561,6 +558,23 @@
 			path = "Shared API";
 			sourceTree = "<group>";
 		};
+		C3C631892A57A3A3002CCE34 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				C3C6317A2A5793B4002CCE34 /* ImageCommentMapper.swift */,
+				C3C6317C2A579457002CCE34 /* RemoteImageCommentsLaoder.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
+		C3C6318A2A57A3DC002CCE34 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				C3C6317E2A5795FB002CCE34 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
 		C3D155D02A50B4A900C60021 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -639,6 +653,7 @@
 		C3F493DE2A4A1A5A0027A77E /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				C3C631892A57A3A3002CCE34 /* Image Comments API */,
 				C3C631842A57A2D2002CCE34 /* Shared API */,
 				C3C631832A57A2B1002CCE34 /* Shared API Infra */,
 				C3C631802A579E06002CCE34 /* Image Comments Feature */,
@@ -653,6 +668,7 @@
 		C3F493E82A4A1A5A0027A77E /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				C3C6318A2A57A3DC002CCE34 /* Image Comments API */,
 				C3C631882A57A356002CCE34 /* Shared API */,
 				C3C631862A57A336002CCE34 /* Shared API Infra */,
 				C3ABA1942A4B79B90047918E /* Helpers */,
