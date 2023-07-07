@@ -97,7 +97,6 @@
 		C3E64FA32A550ABF00E8E465 /* CoreDataFeedStore+FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E64FA22A550ABF00E8E465 /* CoreDataFeedStore+FeedStore.swift */; };
 		C3F493E52A4A1A5A0027A77E /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F493DC2A4A1A5A0027A77E /* EssentialFeed.framework */; };
 		C3F493F72A4A1BE20027A77E /* FeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F493F62A4A1BE20027A77E /* FeedImage.swift */; };
-		C3F493F92A4A1C360027A77E /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F493F82A4A1C360027A77E /* FeedLoader.swift */; };
 		C3F493FC2A4A22D20027A77E /* FeedItemsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F493FB2A4A22D20027A77E /* FeedItemsMapperTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -248,7 +247,6 @@
 		C3F493DC2A4A1A5A0027A77E /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F493E42A4A1A5A0027A77E /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F493F62A4A1BE20027A77E /* FeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImage.swift; sourceTree = "<group>"; };
-		C3F493F82A4A1C360027A77E /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		C3F493FB2A4A22D20027A77E /* FeedItemsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -674,7 +672,6 @@
 			isa = PBXGroup;
 			children = (
 				C3F493F62A4A1BE20027A77E /* FeedImage.swift */,
-				C3F493F82A4A1C360027A77E /* FeedLoader.swift */,
 				C3D155E02A50B77300C60021 /* FeedImageDataLoader.swift */,
 				C3E344DB2A56350F00971515 /* FeedCache.swift */,
 				C3E344E52A5643D600971515 /* FeedImageDataCache.swift */,
@@ -979,7 +976,6 @@
 			files = (
 				C3BE84AE2A4CEA8B009E7AAB /* CoreDataHelpers.swift in Sources */,
 				C36440DA2A4A43E5005223BC /* FeedItemsMapper.swift in Sources */,
-				C3F493F92A4A1C360027A77E /* FeedLoader.swift in Sources */,
 				C34792A42A533FB900998CEE /* FeedImageViewModel.swift in Sources */,
 				C340C1B42A4C8717004F249E /* FeedCachePolicy.swift in Sources */,
 				C34792AC2A5362A900998CEE /* RemoteFeedImageDataLoader.swift in Sources */,
