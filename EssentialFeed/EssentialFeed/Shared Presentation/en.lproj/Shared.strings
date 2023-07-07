@@ -1,0 +1,8 @@
+/* 
+  Shared.strings
+  EssentialFeed
+
+  Created by Sonic on 7/7/23.
+  
+*/
+"GENERIC_CONNECTION_ERROR" = "Couldn't connect to server";
