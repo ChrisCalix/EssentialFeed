@@ -31,7 +31,7 @@ class SceneDelegateTests: XCTestCase {
         let topcontroller = rootNavigation?.topViewController
         
         XCTAssertNotNil(rootNavigation, "Expected a navigation controller as root, got \(String(describing: root)) instead")
-        XCTAssertTrue(topcontroller is FeedViewController, "Expected a feed controller as top view controller, got \(String(describing: topcontroller)) instead")
+        XCTAssertTrue(topcontroller is ListViewController, "Expected a feed controller as top view controller, got \(String(describing: topcontroller)) instead")
     }
     
     private class UIWindowSpy: UIWindow {
