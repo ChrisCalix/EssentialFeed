@@ -441,7 +441,7 @@
 		C37F25382A4E48630017E4CD /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
-				C3D155DD2A50B6EE00C60021 /* Feed UI */,
+				C3D155DD2A50B6EE00C60021 /* Shared UI */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -649,13 +649,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		C3D155DD2A50B6EE00C60021 /* Feed UI */ = {
+		C3D155DD2A50B6EE00C60021 /* Shared UI */ = {
 			isa = PBXGroup;
 			children = (
 				C3D155D02A50B4A900C60021 /* Controllers */,
 				C3D155D12A50B4B600C60021 /* Views */,
 			);
-			path = "Feed UI";
+			path = "Shared UI";
 			sourceTree = "<group>";
 		};
 		C3E4E5FA2A5335AB005CC01B /* Feed Presentation */ = {
