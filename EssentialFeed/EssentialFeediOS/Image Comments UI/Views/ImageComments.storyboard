@@ -1,55 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1hh-nG-9OR">
-     <device id="retina6_1" orientation="portrait" appearance="light"/>
-     <dependencies>
-         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
-         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-     </dependencies>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1hh-nG-9OR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <accessibilityOverrides isEnabled="YES" dynamicTypePreference="2"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
     <scenes>
         <!--List View Controller-->
         <scene sceneID="mpX-1N-UIf">
             <objects>
                 <tableViewController id="1hh-nG-9OR" customClass="ListViewController" customModule="EssentialFeediOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9C2-mb-zX4">
-                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                         <view key="tableFooterView" contentMode="scaleToFill" id="pGT-Qn-vv2">
-                             <rect key="frame" x="0.0" y="181" width="414" height="16"/>
-                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                         </view>
-                         <prototypes>
-                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ImageCommentCell" rowHeight="125" id="4Aa-lg-gTp" customClass="ImageCommentCell" customModule="EssentialFeediOS" customModuleProvider="target">
-                                 <rect key="frame" x="0.0" y="28" width="414" height="125"/>
-                                 <autoresizingMask key="autoresizingMask"/>
-                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Aa-lg-gTp" id="ZOf-kB-Mm6">
-                                     <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="pGT-Qn-vv2">
+                            <rect key="frame" x="0.0" y="201" width="414" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ImageCommentCell" rowHeight="125" id="4Aa-lg-gTp" customClass="ImageCommentCell" customModule="EssentialFeediOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="49" width="414" height="125"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Aa-lg-gTp" id="ZOf-kB-Mm6">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qvu-nr-tUP">
                                             <rect key="frame" x="20" y="11" width="374" height="103"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0v3-k7-LnG">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veU-qC-EZ5">
-                                                            <rect key="frame" x="0.0" y="0.0" width="81.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veU-qC-EZ5">
+                                                            <rect key="frame" x="0.0" y="0.0" width="75.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cP-Se-4uP">
-                                                            <rect key="frame" x="89.5" y="0.0" width="284.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cP-Se-4uP">
+                                                            <rect key="frame" x="83.5" y="0.0" width="290.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment comment comment comment comment comment comment comment comment comment comment comment " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyT-qx-rbM">
-                                                    <rect key="frame" x="0.0" y="28.5" width="305.5" height="74.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment comment comment comment comment comment comment comment comment comment comment comment " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyT-qx-rbM">
+                                                    <rect key="frame" x="0.0" y="27.5" width="363" height="75.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -85,15 +87,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
-                             <action selector="refresh" destination="1hh-nG-9OR" eventType="valueChanged" id="OPy-Q1-D7T"/>
-                         </connections>
-                     </refreshControl>
-                 </tableViewController>
-                 <placeholder placeholderIdentifier="IBFirstResponder" id="RzX-Pc-Xwa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                 <tapGestureRecognizer id="Je6-1L-0eq"/>
-             </objects>
-             <point key="canvasLocation" x="1105.7971014492755" y="-11.383928571428571"/>
-         </scene>
+                            <action selector="refresh" destination="1hh-nG-9OR" eventType="valueChanged" id="OPy-Q1-D7T"/>
+                        </connections>
+                    </refreshControl>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RzX-Pc-Xwa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Je6-1L-0eq"/>
+            </objects>
+            <point key="canvasLocation" x="1105.7971014492755" y="-11.383928571428571"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="secondaryLabelColor">
