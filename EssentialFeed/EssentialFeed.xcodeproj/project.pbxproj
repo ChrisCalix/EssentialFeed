@@ -390,9 +390,8 @@
 		C34B28322A571494008153AD /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				C34B283B2A5714B0008153AD /* FeedSnapshotTests.swift */,
+				C3A95CFE2A59EDE000D0E079 /* Feed UI */,
 				C34B28412A571D27008153AD /* Helpers */,
-				C34B283E2A571AB9008153AD /* snapshots */,
 			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
@@ -504,6 +503,15 @@
 				C3A17B9E2A4B302A002339FA /* EssentialFeedAPIEntToEndTests.swift */,
 			);
 			path = EssentialFeedAPIEntToEndTests;
+			sourceTree = "<group>";
+		};
+		C3A95CFE2A59EDE000D0E079 /* Feed UI */ = {
+			isa = PBXGroup;
+			children = (
+				C34B283E2A571AB9008153AD /* snapshots */,
+				C34B283B2A5714B0008153AD /* FeedSnapshotTests.swift */,
+			);
+			path = "Feed UI";
 			sourceTree = "<group>";
 		};
 		C3ABA1942A4B79B90047918E /* Helpers */ = {
