@@ -53,7 +53,7 @@ extension InMemoryFeedStore {
         InMemoryFeedStore(feedCache: CachedFeed(feed: [], timestamp: Date.distantPast))
     }
     
-    static var withNoExpiredFeedCache: InMemoryFeedStore {
+    static var withNonExpiredFeedCache: InMemoryFeedStore {
         InMemoryFeedStore(feedCache: CachedFeed(feed: [], timestamp: Date()))
     }
 }

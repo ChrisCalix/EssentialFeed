@@ -8,7 +8,7 @@
 import Foundation
 import EssentialFeed
 
-class HTTPCLientStub: HTTPClient {
+class HTTPClientStub: HTTPClient {
     private class Task: HTTPClientTask {
         func cancel() {}
     }
@@ -25,13 +25,13 @@ class HTTPCLientStub: HTTPClient {
     }
 }
 
-extension HTTPCLientStub {
-    static var offline: HTTPCLientStub {
-        HTTPCLientStub(stub: { _ in .failure(NSError(domain: "offline", code: 0))})
+extension HTTPClientStub {
+    static var offline: HTTPClientStub {
+        HTTPClientStub(stub: { _ in .failure(NSError(domain: "offline", code: 0))})
     }
     
-    static func online(_ stub: @escaping (URL) -> (Data, HTTPURLResponse)) ->  HTTPCLientStub {
-        HTTPCLientStub { url in
+    static func online(_ stub: @escaping (URL) -> (Data, HTTPURLResponse)) ->  HTTPClientStub {
+        HTTPClientStub { url in
                 .success(stub(url))
         }
     }
