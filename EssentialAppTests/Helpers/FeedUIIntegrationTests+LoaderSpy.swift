@@ -34,6 +34,7 @@ extension FeedUIIntegrationTests {
                 [weak self] in
                 self?.loadMorePublisher() ?? Empty().eraseToAnyPublisher()
             }))
+            feedRequests[index].send(completion: .finished)
         }
         
         // MARK: - LoadMoreFeedLoader
