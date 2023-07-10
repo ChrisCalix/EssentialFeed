@@ -9,10 +9,11 @@ import XCTest
 import EssentialFeed
 import EssentialFeediOS
 @testable import EssentialApp
+
 class FeedAcceptanceTests: XCTestCase {
 
-func test_onLaunch_displaysRemoteFeedWhenCustomerHasConnectivity() {
-    let feed = launch(httpClient: .online(response), store: .empty)
+    func test_onLaunch_displaysRemoteFeedWhenCustomerHasConnectivity() {
+        let feed = launch(httpClient: .online(response), store: .empty)
 
         XCTAssertEqual(feed.numberOfRenderedFeedImageViews(), 2)
         XCTAssertEqual(feed.renderedFeedImageData(at: 0), makeImageData0())
@@ -38,10 +39,10 @@ func test_onLaunch_displaysRemoteFeedWhenCustomerHasConnectivity() {
 
     func test_onLaunch_displaysCachedRemoteFeedWhenCustomerHasNoConnectivity() {
         let sharedStore = InMemoryFeedStore.empty
+
         let onlineFeed = launch(httpClient: .online(response), store: sharedStore)
         onlineFeed.simulateFeedImageViewVisible(at: 0)
         onlineFeed.simulateFeedImageViewVisible(at: 1)
-
         onlineFeed.simulateLoadMoreFeedAction()
         onlineFeed.simulateFeedImageViewVisible(at: 2)
 
@@ -63,6 +64,7 @@ func test_onLaunch_displaysRemoteFeedWhenCustomerHasConnectivity() {
         let store = InMemoryFeedStore.withExpiredFeedCache
 
         enterBackground(with: store)
+
         XCTAssertNil(store.feedCache, "Expected to delete expired cache")
     }
 
@@ -72,9 +74,9 @@ func test_onLaunch_displaysRemoteFeedWhenCustomerHasConnectivity() {
         enterBackground(with: store)
 
         XCTAssertNotNil(store.feedCache, "Expected to keep non-expired cache")
-        }
+    }
 
-        func test_onFeedImageSelection_displaysComments() {
+    func test_onFeedImageSelection_displaysComments() {
         let comments = showCommentsForFirstImage()
 
         XCTAssertEqual(comments.numberOfRenderedComments(), 1)
@@ -82,12 +84,12 @@ func test_onLaunch_displaysRemoteFeedWhenCustomerHasConnectivity() {
     }
 
     // MARK: - Helpers
-    
+
     private func launch(
         httpClient: HTTPClientStub = .offline,
         store: InMemoryFeedStore = .empty
     ) -> ListViewController {
-        let sut = SceneDelegate(httpClient: httpClient, store: store)
+        let sut = SceneDelegate(httpClient: httpClient, store: store, scheduler: .immediateOnMainQueue)
         sut.window = UIWindow(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
         sut.configureWindow()
 
@@ -96,7 +98,7 @@ func test_onLaunch_displaysRemoteFeedWhenCustomerHasConnectivity() {
     }
 
     private func enterBackground(with store: InMemoryFeedStore) {
-        let sut = SceneDelegate(httpClient: HTTPClientStub.offline, store: store)
+        let sut = SceneDelegate(httpClient: HTTPClientStub.offline, store: store, scheduler: .immediateOnMainQueue)
         sut.sceneWillResignActive(UIApplication.shared.connectedScenes.first!)
     }
 
@@ -109,6 +111,7 @@ func test_onLaunch_displaysRemoteFeedWhenCustomerHasConnectivity() {
         let nav = feed.navigationController
         return nav?.topViewController as! ListViewController
     }
+
     private func response(for url: URL) -> (Data, HTTPURLResponse) {
         let response = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)!
         return (makeData(for: url), response)
@@ -131,6 +134,7 @@ func test_onLaunch_displaysRemoteFeedWhenCustomerHasConnectivity() {
 
             case "/essential-feed/v1/image/2AB2AE66-A4B7-4A16-B374-51BBAC8DB086/comments":
                 return makeCommentsData()
+
             default:
                 return Data()
         }
@@ -150,27 +154,28 @@ func test_onLaunch_displaysRemoteFeedWhenCustomerHasConnectivity() {
     private func makeSecondFeedPageData() -> Data {
         return try! JSONSerialization.data(withJSONObject: ["items": [
             ["id": "166FCDD7-C9F4-420A-B2D6-CE2EAFA3D82F", "image": "http://feed.com/image-2"],
-        ]])
+            ]])
     }
 
     private func makeLastEmptyFeedPageData() -> Data {
-        return try! JSONSerialization.data(withJSONObject: ["items": [Any]()])
+        return try! JSONSerialization.data(withJSONObject: ["items": [String]()])
     }
 
     private func makeCommentsData() -> Data {
-    return try! JSONSerialization.data(withJSONObject: ["items": [
-        [
+        return try! JSONSerialization.data(withJSONObject: ["items": [
+            [
             "id": UUID().uuidString,
             "message": makeCommentMessage(),
             "created_at": "2020-05-20T11:24:59+0000",
             "author": [
-                "username": "a username"
+            "username": "a username"
             ]
-        ] as [String : Any],
+            ] as [String : Any],
         ]])
     }
 
     private func makeCommentMessage() -> String {
         "a message"
     }
+
 }
